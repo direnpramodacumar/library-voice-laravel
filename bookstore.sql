@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 14, 2019 at 11:39 PM
+-- Generation Time: Nov 19, 2019 at 10:53 AM
 -- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.0.26
 
@@ -46,7 +46,7 @@ CREATE TABLE `books` (
 --
 
 INSERT INTO `books` (`id`, `title`, `author`, `quantity`, `publisher`, `isbn`, `image`, `category_id`, `created_at`, `updated_at`) VALUES
-(1, 'Java Generics', 'Maurice Naftalin', 1, 'O\'Reilly Media', '9780596527754', 'https://images-na.ssl-images-amazon.com/images/I/51Jklhlz7ML._SX387_BO1,204,203,200_.jpg', 5, '2019-04-19 20:15:57', '2019-05-02 13:15:45'),
+(1, 'Java Generics', 'Maurice Naftalin', 1, 'O\'Reilly Media', '9780596527754', 'https://images-na.ssl-images-amazon.com/images/I/51Jklhlz7ML._SX387_BO1,204,203,200_.jpg', 5, '2019-04-19 20:15:57', '2019-11-14 22:53:09'),
 (2, 'Kawaii: How to Draw Really Cute Stuff: Draw Anything and Everything in the Cutest Style Ever! (Paperback)', 'Angela Nguyen', 16, 'Search Press Ltd', '9781782215752', 'https://cdn.waterstones.com/bookjackets/large/9781/7822/9781782215752.jpg', 1, '2019-02-13 23:49:10', '2019-04-24 21:35:06'),
 (3, 'The Art Of Lent: A Painting A Day From Ash Wednesday To Easter (Paperback)', 'Sister Wendy Beckett', 10, 'SPCK Publishing', '9780281078554', 'https://cdn.waterstones.com/bookjackets/large/9780/2810/9780281078554.jpg', 1, '2019-02-13 23:49:11', '2019-02-13 23:49:11'),
 (4, 'A Man and His Watch (Hardback)', 'Matthew Hranek', 10, 'Artisan', '9781579657147', 'https://cdn.waterstones.com/bookjackets/large/9781/5796/9781579657147.jpg', 1, '2019-02-13 23:49:13', '2019-02-13 23:49:13'),
@@ -334,13 +334,6 @@ CREATE TABLE `password_resets` (
   `created_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
---
--- Dumping data for table `password_resets`
---
-
-INSERT INTO `password_resets` (`email`, `token`, `created_at`) VALUES
-('joshvbn456@gmail.com', '$2y$10$XvQWpSteRCaMxjO2Vr6ktuQYb5h7uZgFGjGAvnmoFA/qqaCPqPZxa', '2019-11-04 13:58:04');
-
 -- --------------------------------------------------------
 
 --
@@ -368,7 +361,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `first_name`, `last_name`, `email`, `password`, `phone_number`, `address`, `image`, `admin`, `active`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Diren', 'Pramodacumar', 'dp@gmail.com', '$2y$10$cGgmSmbV8N5/1.R0Pdg2Xu6oPc36wjj1vzQVH4ocSB/wXKqwwq8Eq', '07700 900555', 'London', 'default.png', 1, 1, 'rowTIjB2fxglalARJMF0fI9KkTA41fcvux2X9fkx7eb2s9gIDFEiGTcyveiS', '2019-02-14 00:08:23', '2019-03-04 17:19:34'),
+(1, 'White', 'House', 'wh@gmail.com', '$2y$10$cGgmSmbV8N5/1.R0Pdg2Xu6oPc36wjj1vzQVH4ocSB/wXKqwwq8Eq', '07700 900555', 'London', 'default.png', 1, 1, 'rowTIjB2fxglalARJMF0fI9KkTA41fcvux2X9fkx7eb2s9gIDFEiGTcyveiS', '2019-02-14 00:08:23', '2019-03-04 17:19:34'),
 (2, 'Pedro', 'Silva', 'psilva@gmail.com', '$2y$10$1H119WPT8VY9TeHTEGQ9OOcn8p4tfPkSr29/RRPd0So1oQVirZbOO', '07700 900977', '1170 Hickory Heights Drive', 'default.png', 0, 1, 'cojWFtxcIy4YNaVaLwmSOsJuo2JeYtQKqMpTurMs8ia8Un3B4UZ8Nqn9aMDd', '2019-02-14 21:02:34', '2019-02-14 21:02:34'),
 (3, 'Arielle', 'Vu', 'arielleVu@gmail.com', '$2y$10$uCqIuAcaIhLIep4V5ZOj6u4BzvkEGgWFcZmsUsqeiasjnsZDB9i6q', '07700 900656', '3091 Olive Street', 'default.png', 0, 1, 'Q9Ab4ZrDoJA4napFKLeU08ev7dD1Gl2XPWN6J8YDFFCwkBGz0lJhlPCrrIHP', '2019-02-14 21:11:59', '2019-02-14 21:11:59'),
 (4, 'Zackary', 'Heath', 'zackaryHeath@gmail.com', '$2y$10$qUoo2RtuCMeMzXpYoOx.xukHkYusXUxpsuGYzaneva4Scl8d2/aEy', '07700 900925', '1119 Hornor Avenue', 'default.png', 0, 1, '8eNjg6GFXIBbZZwRMGPm3EsoPM5InV68fxDJLFhFZ5nRH8dXy5BAlwhOMkpW', '2019-02-14 21:13:18', '2019-04-24 17:25:03'),
